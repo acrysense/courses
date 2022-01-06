@@ -29,7 +29,7 @@
                                 <a href="corporate-course.html" class="nav__link">Корпоративный курс по продажам</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#" class="nav__link">Контакты</a>
+                                <a href="#" class="nav__link contacts-btn">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -42,7 +42,7 @@
                 <div class="main__offer">
                     <h1 class="main__title">Микаил <br>Даудов</h1>
                     <p class="main__description">Автор бизнес курсов и корпоративных <br>тренингов по продажам</p>
-                    <a href="#" class="main__btn btn btn--before">Оставить заявку</a>
+                    <a href="#" class="main__btn btn btn--before modal-btn" data-id="modal-feedback">Оставить заявку</a>
                 </div>
                 <picture class="main__img">
                     <img src="img/dist/main-bg.png" alt="Author">
@@ -69,12 +69,69 @@
                     <a href="corporate-course.html" class="nav__link">Корпоративный курс по продажам</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">Контакты</a>
+                    <a href="#" class="nav__link contacts-btn">Контакты</a>
                 </li>
             </ul>
         </nav>
     </div>
     <!-- End of mobile menu -->
+    <!-- Contacts menu -->
+    <div class="contacts-menu" id="contacts-menu">
+        <button class="contacts-menu__close close-btn" aria-label="Закрыть"></button>
+        <div class="contacts-menu__wrapper">
+            <div class="contacts-menu__top">
+                <a href="index.html" class="logotype contacts-menu__logotype">
+                    <img src="img/dist/logotype-gold.svg" alt="МД">
+                </a>
+                <a href="#" class="contacts-menu__back">← Назад</a>
+            </div>
+            <div class="contacts-menu__center">
+                <h2 class="contacts-menu__title">Контакты</h2>
+                <div class="contacts-menu__group">
+                    <span class="contacts-menu__help">Телефон</span>
+                    <a href="tel:+78000000000" class="contacts-menu__link">+7 800 000 00 00</a>
+                </div>
+                <div class="contacts-menu__group">
+                    <span class="contacts-menu__help">E-mail</span>
+                    <a href="mailto:info@kursy.ru" class="contacts-menu__link">info@kursy.ru</a>
+                </div>
+            </div>
+            <div class="contacts-menu__bottom">
+                <div class="contacts-menu__block">
+                    <ul class="socials contacts-menu__socials">
+                        <li class="socials__item socials__item--active">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-socials-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="contacts-menu__help">Связаться</span>
+                </div>
+                <div class="contacts-menu__block">
+                    <ul class="socials contacts-menu__socials">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-socials-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-socials-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="contacts-menu__help">Соц. сети</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of contacts menu -->
     <!-- Personal history -->
     <section class="personal-history personal-history--mt" id="personal-history">
         <div class="container">
@@ -635,6 +692,38 @@
     </footer>
     <!-- End of footer -->
     <!-- Modal -->
+    <div class="modal" id="modal-feedback">
+        <div class="modal__wrapper modal__wrapper--sm">
+            <button class="modal__close close-btn" aria-label="Закрыть"></button>
+            <div class="modal__form">
+                <div class="feedback__wrapper feedback__wrapper--column">
+                    <div class="feedback__left">
+                        <h2 class="section-title feedback__heading">Оставьте свои данные, для связи</h2>
+                        <div class="content">
+                            <p>
+                                Оставляя данные, я соглашаюсь <br>
+                                на обработку персональных данных и <br>
+                                с правилами пользования Платформой
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback__right">
+                        <form action="#" class="feedback-form">
+                            <div class="feedback-form__inner">
+                                <input type="text" class="feedback-form__input input" placeholder="Имя">
+                            </div>
+                            <div class="feedback-form__inner">
+                                <input type="text" class="feedback-form__input input" placeholder="Телефон*">
+                                <input type="text" class="feedback-form__input input" placeholder="Почта*">
+                            </div>
+                            <button class="feedback-form__btn btn">Отправить</button>
+                        </form>
+                    </div>
+                    <p class="feedback__help">* - обязательные для заполнения поля</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal" id="review-01">
         <div class="modal__wrapper">
             <button class="modal__close close-btn" aria-label="Закрыть"></button>

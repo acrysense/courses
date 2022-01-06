@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МД - Корпоративный тренинг по продажам</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- Main -->
+    <section class="main" id="main">
+        <div class="container">
+            <div class="main__wrapper">
+                <header class="header" id="header">
+                    <a href="index.html" class="logotype">
+                        <img src="img/dist/logotype.svg" alt="МД">
+                    </a>
+                    <nav class="nav nav--desktop">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="sales-master.html" class="nav__link">Мастер продаж</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="personal-effectiveness.html" class="nav__link">Личная эффективность</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="corporate-course.html" class="nav__link">Корпоративный курс по продажам</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link contacts-btn">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                        <span class="hamburger__inner"></span>
+                        <span class="hamburger__inner"></span>
+                        <span class="hamburger__inner"></span>
+                    </button>
+                </header>
+                <div class="main__offer">
+                    <h2 class="main__heading">Корпоративный</h2>
+                    <h1 class="main__title main__title--sm">курс <br>по продажам</h1>
+                    <p class="main__description">Offline</p>
+                    <p class="main__text">Вы можете заказать для своих сотрудников корпоративный тренинг по продажам. Время,  и место проведения обсуждается с каждым Клиентом индивидуально. </p>
+                    <div class="main__inner">
+                        <a href="#" class="main__btn btn btn--before modal-btn" data-id="modal-feedback">Оставить заявку</a>
+                        <a href="#" class="main__btn btn btn--transparent btn--before">Оплатить сейчас</a>
+                    </div>
+                </div>
+                <picture class="main__img">
+                    <img src="img/dist/main-corporate-bg.png" alt="Author">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <!-- End of main -->
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-menu__close close-btn" aria-label="Закрыть"></button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a href="sales-master.html" class="nav__link">Мастер продаж</a>
+                </li>
+                <li class="nav__item">
+                    <a href="personal-effectiveness.html" class="nav__link">Личная эффективность</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a href="corporate-course.html" class="nav__link">Корпоративный курс по продажам</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link contacts-btn">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End of mobile menu -->
+    <!-- Contacts menu -->
+    <div class="contacts-menu" id="contacts-menu">
+        <button class="contacts-menu__close close-btn" aria-label="Закрыть"></button>
+        <div class="contacts-menu__wrapper">
+            <div class="contacts-menu__top">
+                <a href="index.html" class="logotype contacts-menu__logotype">
+                    <img src="img/dist/logotype-gold.svg" alt="МД">
+                </a>
+                <a href="#" class="contacts-menu__back">← Назад</a>
+            </div>
+            <div class="contacts-menu__center">
+                <h2 class="contacts-menu__title">Контакты</h2>
+                <div class="contacts-menu__group">
+                    <span class="contacts-menu__help">Телефон</span>
+                    <a href="tel:+78000000000" class="contacts-menu__link">+7 800 000 00 00</a>
+                </div>
+                <div class="contacts-menu__group">
+                    <span class="contacts-menu__help">E-mail</span>
+                    <a href="mailto:info@kursy.ru" class="contacts-menu__link">info@kursy.ru</a>
+                </div>
+            </div>
+            <div class="contacts-menu__bottom">
+                <div class="contacts-menu__block">
+                    <ul class="socials contacts-menu__socials">
+                        <li class="socials__item socials__item--active">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-socials-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="contacts-menu__help">Связаться</span>
+                </div>
+                <div class="contacts-menu__block">
+                    <ul class="socials contacts-menu__socials">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-socials-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-socials-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="contacts-menu__help">Соц. сети</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of contacts menu -->
+    <!-- Personal course -->
+    <section class="personal-course" id="personal-course">
+        <div class="container">
+            <h2 class="section-title personal-course__heading"><span>Корпоративный тренинг <br> по продажам</span> подойдет <br>для Компаний, которые хотят...</h2>
+            <div class="personal-course__wrapper">
+                <div class="personal-course__left">
+                    <ul class="personal-course__list">
+                        <li class="personal-course__item">
+                            Усилить свой отдел продаж 
+                        </li>
+                        <li class="personal-course__item">
+                            Познакомить своих сотрудников с самыми <br>современными и действенными техниками продаж
+                        </li>
+                        <li class="personal-course__item">
+                            Задать высокие стандарты <br>обслуживания своих Клиентов
+                        </li>
+                        <li class="personal-course__item">
+                            Начать получать больше прибыли <br>с каждого сотрудника
+                        </li>
+                        <li class="personal-course__item">
+                            Наметить вектор развития для своего отдела <br>продаж и создать систему развития персонала
+                        </li>
+                        <li class="personal-course__item">
+                            Проанализировать свой отдел продаж и устранить <br>основные ошибки в работе сотрудников
+                        </li>
+                    </ul>
+                </div>
+                <div class="personal-course__right">
+                    <div class="rates">
+                        <div class="rates__wrapper">
+                            <h3 class="rates__title section-title">Тарифы</h3>
+                            <div class="rates__list">
+                                <div class="rates__item">
+                                    <h4 class="rates__subtitle">До 10 человек</h4>
+                                    <span class="rates__help">3000₽/день с человека</span>
+                                </div>
+                                <div class="rates__item">
+                                    <h4 class="rates__subtitle">10-20 человек</h4>
+                                    <span class="rates__help">2500₽/день с человека</span>
+                                </div>
+                                <div class="rates__item">
+                                    <h4 class="rates__subtitle">20-30 человек</h4>
+                                    <span class="rates__help">2000₽/день с человека</span>
+                                </div>
+                                <div class="rates__item">
+                                    <h4 class="rates__subtitle">От 30 человек</h4>
+                                    <span class="rates__help">1500₽/день с человека</span>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of personal course -->
+    <!-- Author quote -->
+    <section class="author-quote" id="author-quote">
+        <div class="container">
+            <div class="author-quote__wrapper">
+                <picture class="author-quote__img">
+                    <img src="img/dist/author-corporate-img.png" alt="Image">
+                </picture>
+                <div class="author-quote__body">
+                    <div class="author-quote__content content">
+                        <p>
+                            Сотрудники - основа любого бизнеса. 
+                            Сегодня выкладывать ресурсы в своих сотрудников стало нормой. Благодаря тренингам в компанию приходят новые технологии и методики продаж. Поднимается уровень мотивации сотрудников и их желание расти. Сотрудники чувствуют заботу руководства и стараются работать эффективнее
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of author quote -->
+    <!-- Programm -->
+    <section class="programm" id="programm">
+        <div class="container">
+            <h2 class="section-title programm__heading">
+                Программа курса <br>
+                <span>Offline продажи</span>
+            </h2>
+            <div class="programm__wrapper">
+                <div class="programm__item">
+                    <h3 class="programm__title">Эффективное прохождение тренинга</h3>
+                    <div class="programm__content content">
+                        <p>Изучите основные принципы, поняв которые, можно взять от тренинга максимум</p>
+                    </div>
+                </div>
+                <div class="programm__item">
+                    <h3 class="programm__title">Наша система обучения. Как ее изменить</h3>
+                    <div class="programm__content content">
+                        <p>Что нужно изменить в нашей системе обучения и какие основные ошибки мы совершаем приступая к решению определенных задач</p>
+                    </div>
+                </div>
+                <div class="programm__item">
+                    <h3 class="programm__title">Параметры дано. Факторы, на которые мы можем влиять, и факторы, которые нам неподвластны</h3>
+                    <div class="programm__content content">
+                        <p>Узнаете, как неосознанно тратится энергия на те факторы, которые нам неподвластны, и к чему нас это приводит</p>
+                    </div>
+                </div>
+                <div class="programm__item">
+                    <h3 class="programm__title">Этапы продаж</h3>
+                    <div class="programm__content content">
+                        <p>Разберете этапы продаж и для чего они нужны. Что необходимо делать на каждом этапе? Какова цель каждого из этапов продаж?</p>
+                    </div>
+                </div>
+                <div class="programm__item">
+                    <h3 class="programm__title">Подготовка Менеджеров по продажам</h3>
+                    <div class="programm__content content">
+                        <p>Узнаете, над какими параметрами и навыками Вам нужно работать, чтобы продавать больше</p>
+                    </div>
+                </div>
+                <div class="programm__item">
+                    <h3 class="programm__title">Установление контакта</h3>
+                    <div class="programm__content content">
+                        <p>Обсудим с Вами принципы работы мозга, и как первые секунды влияют на дальнейший ход продажи</p>
+                    </div>
+                </div>
+                <div class="programm__item">
+                    <h3 class="programm__title">Выявление потребностей</h3>
+                    <div class="programm__content content">
+                        <p>Разберете навык задавания вопросов и, самое главное, поймете, какие вопросы нужно задавать, когда и для чего нам это нужно</p>
+                    </div>
+                </div>
+                <div class="programm__item">
+                    <h3 class="programm__title">Презентация товара</h3>
+                    <div class="programm__content content">
+                        <p>Покупают не там, где есть продукт - покупают там, где продают. Узнаете основные техники презентации и влияния на мнение Клиента</p>
+                    </div>
+                </div>
+                <div class="programm__item">
+                    <h3 class="programm__title">Работа с возражениями</h3>
+                    <div class="programm__content content">
+                        <p>Разберете основные техники работы с возражениями, а также обсудите техники продаж без возражений</p>
+                    </div>
+                </div>
+                <div class="programm__item">
+                    <h3 class="programm__title">Завершение сделки</h3>
+                    <div class="programm__content content">
+                        <p>Грамотное завершение сделки - залог успеха в продажах. Узнаете основные техники  завершения сделок</p>
+                    </div>
+                </div>
+                <div class="programm__item">
+                    <h3 class="programm__title">Послепродажное обслуживание</h3>
+                    <div class="programm__content content">
+                        <p>Наша цель - довольные, лояльные и, самое главное, постоянные Клиенты</p>
+                    </div>
+                </div>
+                <div class="programm__item">
+                    <h3 class="programm__title">Развитие в продажах, цели и карьера. <br>Куда идти в продажах и зачем?</h3>
+                    <div class="programm__content content">
+                        <p>Обсудите самое главное - конечную цель продавца</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of programm -->
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Что уже было на курсах</h2>
+            <div class="gallery__slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="gallery__slide">
+                                <img src="img/dist/gallery-01.png" alt="Image">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="gallery__slide">
+                                <img src="img/dist/gallery-02.png" alt="Image">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="gallery__slide">
+                                <img src="img/dist/gallery-03.png" alt="Image">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="gallery__slide">
+                                <img src="img/dist/gallery-01.png" alt="Image">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="gallery__slide">
+                                <img src="img/dist/gallery-02.png" alt="Image">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="gallery__slide">
+                                <img src="img/dist/gallery-03.png" alt="Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-navigation">
+                    <button class="swiper-button-prev" aria-label="Назад">
+                        <svg class="swiper-button-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="swiper-button-next" aria-label="Далее">
+                        <svg class="swiper-button-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of gallery -->
+    <!-- Reviews -->
+    <section class="reviews reviews--mt" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Отзывы студентов</h2>
+            <div class="reviews__slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="reviews__slide">
+                                <div class="reviews__top">
+                                    <picture class="reviews__img">
+                                        <img src="img/dist/" alt="">
+                                    </picture>
+                                    <div class="reviews__block">
+                                        <h3 class="reviews__name">Рамиз</h3>
+                                        <span class="reviews__login">login</span>
+                                    </div>
+                                </div>
+                                <div class="reviews__body">
+                                    <div class="content">
+                                        <p>
+                                            <b>Точка.  А</b><br>
+                                            1. Кем работал/а до курса.<br>
+                                            Ремонтно Строит компания<br>
+                                            2. Какой был доход.<br>
+                                            Чистый доход в среднем 200 тыс.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="reviews__more modal-btn" data-id="review-01">Читать подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__slide">
+                                <div class="reviews__top">
+                                    <picture class="reviews__img">
+                                        <img src="img/dist/" alt="">
+                                    </picture>
+                                    <div class="reviews__block">
+                                        <h3 class="reviews__name">Шамиль</h3>
+                                        <span class="reviews__login">login</span>
+                                    </div>
+                                </div>
+                                <div class="reviews__body">
+                                    <div class="content">
+                                        <p>
+                                            <b>Точка.  А</b><br>
+                                            1. Кем работал/а до курса.<br>
+                                            Работал до курса менеджером по продажам в магазине телефонов<br>
+                                            2. Какой был доход.<br>
+                                        </p>
+                                    </div>
+                                    <a href="#" class="reviews__more modal-btn" data-id="review-02">Читать подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__slide">
+                                <div class="reviews__top">
+                                    <picture class="reviews__img">
+                                        <img src="img/dist/" alt="">
+                                    </picture>
+                                    <div class="reviews__block">
+                                        <h3 class="reviews__name">Рамазан Маадов</h3>
+                                        <span class="reviews__login">login</span>
+                                    </div>
+                                </div>
+                                <div class="reviews__body">
+                                    <div class="content">
+                                        <p>
+                                            <b>Точка.  А</b><br>
+                                            1. Кем работал/а до курса.<br>
+                                            Менеджер по продажам.<br>
+                                            2. Какой был доход.<br>
+                                            35000-60000
+                                        </p>
+                                    </div>
+                                    <a href="#" class="reviews__more modal-btn" data-id="review-03">Читать подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__slide">
+                                <div class="reviews__top">
+                                    <picture class="reviews__img">
+                                        <img src="img/dist/" alt="">
+                                    </picture>
+                                    <div class="reviews__block">
+                                        <h3 class="reviews__name">Рамиз</h3>
+                                        <span class="reviews__login">login</span>
+                                    </div>
+                                </div>
+                                <div class="reviews__body">
+                                    <div class="content">
+                                        <p>
+                                            <b>Точка.  А</b><br>
+                                            1. Кем работал/а до курса.<br>
+                                            Ремонтно Строит компания<br>
+                                            2. Какой был доход.<br>
+                                            Чистый доход в среднем 200 тыс.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="reviews__more modal-btn" data-id="review-01">Читать подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__slide">
+                                <div class="reviews__top">
+                                    <picture class="reviews__img">
+                                        <img src="img/dist/" alt="">
+                                    </picture>
+                                    <div class="reviews__block">
+                                        <h3 class="reviews__name">Шамиль</h3>
+                                        <span class="reviews__login">login</span>
+                                    </div>
+                                </div>
+                                <div class="reviews__body">
+                                    <div class="content">
+                                        <p>
+                                            <b>Точка.  А</b><br>
+                                            1. Кем работал/а до курса.<br>
+                                            Работал до курса менеджером по продажам в магазине телефонов<br>
+                                            2. Какой был доход.<br>
+                                        </p>
+                                    </div>
+                                    <a href="#" class="reviews__more modal-btn" data-id="review-02">Читать подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__slide">
+                                <div class="reviews__top">
+                                    <picture class="reviews__img">
+                                        <img src="img/dist/" alt="">
+                                    </picture>
+                                    <div class="reviews__block">
+                                        <h3 class="reviews__name">Рамазан Маадов</h3>
+                                        <span class="reviews__login">login</span>
+                                    </div>
+                                </div>
+                                <div class="reviews__body">
+                                    <div class="content">
+                                        <p>
+                                            <b>Точка.  А</b><br>
+                                            1. Кем работал/а до курса.<br>
+                                            Менеджер по продажам.<br>
+                                            2. Какой был доход.<br>
+                                            35000-60000
+                                        </p>
+                                    </div>
+                                    <a href="#" class="reviews__more modal-btn" data-id="review-01">Читать подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-navigation">
+                    <button class="swiper-button-prev" aria-label="Назад">
+                        <svg class="swiper-button-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="swiper-button-next" aria-label="Далее">
+                        <svg class="swiper-button-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of reviews -->
+    <!-- Feedback -->
+    <section class="feedback" id="feedback">
+        <div class="container">
+            <div class="feedback__form">
+                <div class="feedback__wrapper">
+                    <div class="feedback__left">
+                        <h2 class="section-title feedback__heading">Оставьте свои данные, для связи</h2>
+                        <div class="content">
+                            <p>
+                                Оставляя данные, я соглашаюсь <br>
+                                на обработку персональных данных и <br>
+                                с правилами пользования Платформой
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback__right">
+                        <form action="#" class="feedback-form">
+                            <div class="feedback-form__inner">
+                                <input type="text" class="feedback-form__input input" placeholder="Имя">
+                            </div>
+                            <div class="feedback-form__inner">
+                                <input type="text" class="feedback-form__input input" placeholder="Телефон*">
+                                <input type="text" class="feedback-form__input input" placeholder="Почта*">
+                            </div>
+                            <button class="feedback-form__btn btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+                <p class="feedback__help">* - обязательные для заполнения поля</p>
+            </div>
+        </div>
+    </section>
+    <!-- End of feedback -->
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer__main">
+            <div class="container">
+                <div class="footer__wrapper footer__wrapper--end">
+                    <div class="footer__block">
+                        <a href="tel:+78000000000" class="footer__phone">+7 800 000 00 00</a>
+                        <span class="footer__help">Пн-пт 10:00 - 20:00</span>
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Курсе второй</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Курсе первый</a>
+                        </li>
+                    </ul>
+                    <ul class="socials footer__socials">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-socials-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-socials-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-socials-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <p class="footer__copyright">Copyright 2021</p>
+                    <a href="#" class="footer__link">Политика обработкие персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer -->
+    <!-- Modal -->
+    <div class="modal" id="modal-feedback">
+        <div class="modal__wrapper modal__wrapper--sm">
+            <button class="modal__close close-btn" aria-label="Закрыть"></button>
+            <div class="modal__form">
+                <div class="feedback__wrapper feedback__wrapper--column">
+                    <div class="feedback__left">
+                        <h2 class="section-title feedback__heading">Оставьте свои данные, для связи</h2>
+                        <div class="content">
+                            <p>
+                                Оставляя данные, я соглашаюсь <br>
+                                на обработку персональных данных и <br>
+                                с правилами пользования Платформой
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback__right">
+                        <form action="#" class="feedback-form">
+                            <div class="feedback-form__inner">
+                                <input type="text" class="feedback-form__input input" placeholder="Имя">
+                            </div>
+                            <div class="feedback-form__inner">
+                                <input type="text" class="feedback-form__input input" placeholder="Телефон*">
+                                <input type="text" class="feedback-form__input input" placeholder="Почта*">
+                            </div>
+                            <button class="feedback-form__btn btn">Отправить</button>
+                        </form>
+                    </div>
+                    <p class="feedback__help">* - обязательные для заполнения поля</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="review-01">
+        <div class="modal__wrapper">
+            <button class="modal__close close-btn" aria-label="Закрыть"></button>
+            <div class="reviews">
+                <div class="reviews__top">
+                    <picture class="reviews__img">
+                        <img src="img/dist/" alt="">
+                    </picture>
+                    <div class="reviews__block">
+                        <h3 class="reviews__name">Рамиз</h3>
+                        <span class="reviews__login">login</span>
+                    </div>
+                </div>
+                <div class="reviews__body content">
+                    <p>
+                        <b>Точка.  А</b><br><br>
+
+                        1. Кем работал/а до курса.<br>
+                        Ремонтно Строит компания<br><br>
+
+                        2. Какой был доход.<br>
+                        Чистый доход в среднем 200 тыс.<br><br>
+                        
+                        3. Почему доход не рос ?<br>
+                        Небольшая команда, плохо ищу и разбираюсь в людях.<br><br>
+                        
+                        4.Основная причина покупки курса ?<br>
+                        Научиться техникам продаж.<br><br>
+
+                        5. Какие сомнения и страхи были перед покупкой курса ? <br>
+                        Никаких.<br><br>
+
+                        6. Они оправдались ?<br>
+                        Так как страхов и сомнений не было, не оправдались. <br><br>
+
+                        <b>Точка. Б</b><br>
+                        1. Что изменилось в жизни после курса ? (навыки, мышление, крупные покупки, переезд, окружение, хобби) <br>
+                        Начал понимать техники продаж и оттачивать их.<br><br>
+
+                        2. Какой доход сейчас ? (вырос ли после курса и на сколько) <br>
+                        Примерно такой же.<br><br>
+
+                        3. Кому Вы бы порекомендовали этот курс ?<br>
+                        Всем - мы каждый день что-то продаём прямо или косвенно.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="review-02">
+        <div class="modal__wrapper">
+            <button class="modal__close close-btn" aria-label="Закрыть"></button>
+            <div class="reviews">
+                <div class="reviews__top">
+                    <picture class="reviews__img">
+                        <img src="img/dist/" alt="">
+                    </picture>
+                    <div class="reviews__block">
+                        <h3 class="reviews__name">Шамиль</h3>
+                        <span class="reviews__login">login</span>
+                    </div>
+                </div>
+                <div class="reviews__body content">
+                    <p>
+                        <b>Точка.  А</b><br><br>
+
+                        1. Кем работал/а до курса.<br>
+                        Ремонтно Строит компания<br><br>
+
+                        2. Какой был доход.<br>
+                        Чистый доход в среднем 200 тыс.<br><br>
+                        
+                        3. Почему доход не рос ?<br>
+                        Небольшая команда, плохо ищу и разбираюсь в людях.<br><br>
+                        
+                        4.Основная причина покупки курса ?<br>
+                        Научиться техникам продаж.<br><br>
+
+                        5. Какие сомнения и страхи были перед покупкой курса ? <br>
+                        Никаких.<br><br>
+
+                        6. Они оправдались ?<br>
+                        Так как страхов и сомнений не было, не оправдались. <br><br>
+
+                        <b>Точка. Б</b><br>
+                        1. Что изменилось в жизни после курса ? (навыки, мышление, крупные покупки, переезд, окружение, хобби) <br>
+                        Начал понимать техники продаж и оттачивать их.<br><br>
+
+                        2. Какой доход сейчас ? (вырос ли после курса и на сколько) <br>
+                        Примерно такой же.<br><br>
+
+                        3. Кому Вы бы порекомендовали этот курс ?<br>
+                        Всем - мы каждый день что-то продаём прямо или косвенно.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="review-03">
+        <div class="modal__wrapper">
+            <button class="modal__close close-btn" aria-label="Закрыть"></button>
+            <div class="reviews">
+                <div class="reviews__top">
+                    <picture class="reviews__img">
+                        <img src="img/dist/" alt="">
+                    </picture>
+                    <div class="reviews__block">
+                        <h3 class="reviews__name">Рамазан Маадов</h3>
+                        <span class="reviews__login">login</span>
+                    </div>
+                </div>
+                <div class="reviews__body content">
+                    <p>
+                        <b>Точка.  А</b><br><br>
+
+                        1. Кем работал/а до курса.<br>
+                        Ремонтно Строит компания<br><br>
+
+                        2. Какой был доход.<br>
+                        Чистый доход в среднем 200 тыс.<br><br>
+                        
+                        3. Почему доход не рос ?<br>
+                        Небольшая команда, плохо ищу и разбираюсь в людях.<br><br>
+                        
+                        4.Основная причина покупки курса ?<br>
+                        Научиться техникам продаж.<br><br>
+
+                        5. Какие сомнения и страхи были перед покупкой курса ? <br>
+                        Никаких.<br><br>
+
+                        6. Они оправдались ?<br>
+                        Так как страхов и сомнений не было, не оправдались. <br><br>
+
+                        <b>Точка. Б</b><br>
+                        1. Что изменилось в жизни после курса ? (навыки, мышление, крупные покупки, переезд, окружение, хобби) <br>
+                        Начал понимать техники продаж и оттачивать их.<br><br>
+
+                        2. Какой доход сейчас ? (вырос ли после курса и на сколько) <br>
+                        Примерно такой же.<br><br>
+
+                        3. Кому Вы бы порекомендовали этот курс ?<br>
+                        Всем - мы каждый день что-то продаём прямо или косвенно.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay"></div>
+    <!-- End of modal -->
+    <!-- Scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
