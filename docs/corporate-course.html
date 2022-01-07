@@ -59,25 +59,27 @@
     <!-- Mobile menu -->
     <div class="mobile-menu" id="mobile-menu">
         <button class="mobile-menu__close close-btn" aria-label="Закрыть"></button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="index.html" class="nav__link">Главная</a>
-                </li>
-                <li class="nav__item">
-                    <a href="sales-master.html" class="nav__link">Мастер продаж</a>
-                </li>
-                <li class="nav__item">
-                    <a href="personal-effectiveness.html" class="nav__link">Личная эффективность</a>
-                </li>
-                <li class="nav__item nav__item--active">
-                    <a href="corporate-course.html" class="nav__link">Корпоративный курс по продажам</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link contacts-btn">Контакты</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="mobile-menu__wrapper">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="sales-master.html" class="nav__link">Мастер продаж</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="personal-effectiveness.html" class="nav__link">Личная эффективность</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="corporate-course.html" class="nav__link">Корпоративный курс по продажам</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link contacts-btn">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <!-- End of mobile menu -->
     <!-- Contacts menu -->
@@ -233,7 +235,7 @@
                 Программа курса <br>
                 <span>Offline продажи</span>
             </h2>
-            <div class="programm__wrapper">
+            <div class="programm__wrapper programm__wrapper--hidden">
                 <div class="programm__item">
                     <h3 class="programm__title">Эффективное прохождение тренинга</h3>
                     <div class="programm__content content">
@@ -307,6 +309,7 @@
                     </div>
                 </div>
             </div>
+            <a href="#" class="programm__more">Показать полностью</a>
         </div>
     </section>
     <!-- End of programm -->

@@ -66,25 +66,27 @@
     <!-- Mobile menu -->
     <div class="mobile-menu" id="mobile-menu">
         <button class="mobile-menu__close close-btn" aria-label="Закрыть"></button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="index.html" class="nav__link">Главная</a>
-                </li>
-                <li class="nav__item nav__item--active">
-                    <a href="sales-master.html" class="nav__link">Мастер продаж</a>
-                </li>
-                <li class="nav__item">
-                    <a href="personal-effectiveness.html" class="nav__link">Личная эффективность</a>
-                </li>
-                <li class="nav__item">
-                    <a href="corporate-course.html" class="nav__link">Корпоративный курс по продажам</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link contacts-btn">Контакты</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="mobile-menu__wrapper">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="sales-master.html" class="nav__link">Мастер продаж</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="personal-effectiveness.html" class="nav__link">Личная эффективность</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="corporate-course.html" class="nav__link">Корпоративный курс по продажам</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link contacts-btn">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <!-- End of mobile menu -->
     <!-- Contacts menu -->
@@ -144,11 +146,24 @@
         </div>
     </div>
     <!-- End of contacts menu -->
-    <!-- Switch content -->
-    <div class="switch-content switch-content--active">
-        <!-- About -->
-        <section class="about" id="about">
-            <div class="container">
+    <!-- Video -->
+    <div class="video">
+        <div class="container">
+            <div class="video__wrapper">
+                <div class="video__promo" style="background-image: url(img/dist/video-bg.png);">
+                    <h3 class="video__title">Приветственное видео Михаила&nbsp;Даудова</h3>
+                </div>
+                <div class="video__iframe">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SMKPKGW083c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of video -->
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="switch-content switch-content--active" data-switch="offline">
                 <h2 class="section-title about__heading">Программа <span>Offline продажи</span> <br>подойдет Вам если Вы...</h2>
                 <div class="about__wrapper">
                     <div class="about__item">
@@ -219,36 +234,109 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End of about -->
-        <!-- Author quote -->
-        <section class="author-quote" id="author-quote">
-            <div class="container">
-                <div class="author-quote__wrapper">
-                    <picture class="author-quote__img">
-                        <img src="img/dist/author-corporate-img.png" alt="Image">
-                    </picture>
-                    <div class="author-quote__body">
-                        <div class="author-quote__content content">
+            <div class="switch-content" data-switch="online">
+                <h2 class="section-title about__heading">Программа <span>Online продажи</span> <br>подойдет Вам если Вы...</h2>
+                <div class="about__wrapper">
+                    <div class="about__item">
+                        <picture class="about__icon">
+                            <img src="img/dist/about-online-01.svg" width="49px" height="49px" alt="Icon">
+                        </picture>
+                        <h3 class="about__title">Планируете начать вести блог</h3>
+                        <div class="about__content content">
                             <p>
-                                Начнете видеть свои слабые стороны 
-                                в продажах, а также слабые стороны своего персонала. Получите исчерпывающий набор знаний и инструментов, которые нужно обязательно внедрять в любом отделе продаж. Вы сможете изменить не только свой подход 
-                                к продажам, но и задавать четкий вектор развития для своих сотрудников
+                                Вам будет предоставлен исчерпывающий объем знаний для старта в Instagram. Научитесь вести и продвигать личные или коммерческие страницы
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <picture class="about__icon">
+                            <img src="img/dist/about-online-02.svg" width="51px" height="48px" alt="Icon">
+                        </picture>
+                        <h3 class="about__title">Владеете онлайн профессиями, но не можете привлечь клиентов</h3>
+                        <div class="about__content content">
+                            <p>
+                                Освоите навык позиционирования себя, как эксперта. Обучитесь техникам продаж и снятия возражений через сторителлинг
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <picture class="about__icon">
+                            <img src="img/dist/about-online-03.svg" width="51px" height="50px" alt="Icon">
+                        </picture>
+                        <h3 class="about__title">Эксперт в любой нише</h3>
+                        <div class="about__content content">
+                            <p>
+                                Научитесь продавать услуги через личность и  начнете построение персонального бренда
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <picture class="about__icon">
+                            <img src="img/dist/about-online-04.svg" width="42px" height="52px" alt="Icon">
+                        </picture>
+                        <h3 class="about__title">Начинающий предприниматель</h3>
+                        <div class="about__content content">
+                            <p>
+                                Добавите еще один канал продвижения своего проекта в виде личного блога. Добавите лояльности аудитории к своему проекту и увеличить продажи
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <picture class="about__icon">
+                            <img src="img/dist/about-online-05.svg" width="42px" height="42px" alt="Icon">
+                        </picture>
+                        <h3 class="about__title">Давно на рынке online, но доход не растет</h3>
+                        <div class="about__content content">
+                            <p>
+                                Научитесь продавать дороже. Освоите навык распаковки личности. Начнете формировать вокруг себя лояльное сообщество
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <picture class="about__icon">
+                            <img src="img/dist/about-online-06.svg" width="51px" height="43px" alt="Icon">
+                        </picture>
+                        <h3 class="about__title">Хотите зарабатывать в online</h3>
+                        <div class="about__content content">
+                            <p>
+                                Давно смотрите в сторону онлайна, но не знаете как и с чего начать? Программа предоставляет простые и понятные алгоритмы выхода в онлайн, как сразу с коммерческой страницы, так и через личный блог
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End of author quote -->
-        <!-- Programm -->
-        <section class="programm" id="programm">
-            <div class="container">
+        </div>
+    </section>
+    <!-- End of about -->
+    <!-- Author quote -->
+    <section class="author-quote" id="author-quote">
+        <div class="container">
+            <div class="author-quote__wrapper">
+                <picture class="author-quote__img">
+                    <img src="img/dist/author-corporate-img.png" alt="Image">
+                </picture>
+                <div class="author-quote__body">
+                    <div class="author-quote__content content">
+                        <p>
+                            Начнете видеть свои слабые стороны 
+                            в продажах, а также слабые стороны своего персонала. Получите исчерпывающий набор знаний и инструментов, которые нужно обязательно внедрять в любом отделе продаж. Вы сможете изменить не только свой подход 
+                            к продажам, но и задавать четкий вектор развития для своих сотрудников
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of author quote -->
+    <!-- Programm -->
+    <section class="programm" id="programm">
+        <div class="container">
+            <div class="switch-content switch-content--active" data-switch="offline">
                 <h2 class="section-title programm__heading">
                     Программа курса<br>
                     <span>Offline продажи</span>
                 </h2>
-                <div class="programm__wrapper">
+                <div class="programm__wrapper programm__wrapper--hidden">
                     <div class="programm__item">
                         <h3 class="programm__title">Эффективное прохождение тренинга</h3>
                         <div class="programm__content content">
@@ -322,114 +410,14 @@
                         </div>
                     </div>
                 </div>
+                <a href="#" class="programm__more">Показать полностью</a>
             </div>
-        </section>
-        <!-- End of programm -->
-    </div>
-    <div class="switch-content">
-        <!-- About -->
-        <section class="about" id="about">
-            <div class="container">
-                <h2 class="section-title about__heading">Программа <span>Online продажи</span> <br>подойдет Вам если Вы...</h2>
-                <div class="about__wrapper">
-                    <div class="about__item">
-                        <picture class="about__icon">
-                            <img src="img/dist/about-online-01.svg" width="49px" height="49px" alt="Icon">
-                        </picture>
-                        <h3 class="about__title">Планируете начать вести блог</h3>
-                        <div class="about__content content">
-                            <p>
-                                Вам будет предоставлен исчерпывающий объем знаний для старта в Instagram. Научитесь вести и продвигать личные или коммерческие страницы
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about__item">
-                        <picture class="about__icon">
-                            <img src="img/dist/about-online-02.svg" width="51px" height="48px" alt="Icon">
-                        </picture>
-                        <h3 class="about__title">Владеете онлайн профессиями, но не можете привлечь клиентов</h3>
-                        <div class="about__content content">
-                            <p>
-                                Освоите навык позиционирования себя, как эксперта. Обучитесь техникам продаж и снятия возражений через сторителлинг
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about__item">
-                        <picture class="about__icon">
-                            <img src="img/dist/about-online-03.svg" width="51px" height="50px" alt="Icon">
-                        </picture>
-                        <h3 class="about__title">Эксперт в любой нише</h3>
-                        <div class="about__content content">
-                            <p>
-                                Научитесь продавать услуги через личность и  начнете построение персонального бренда
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about__item">
-                        <picture class="about__icon">
-                            <img src="img/dist/about-online-04.svg" width="42px" height="52px" alt="Icon">
-                        </picture>
-                        <h3 class="about__title">Начинающий предприниматель</h3>
-                        <div class="about__content content">
-                            <p>
-                                Добавите еще один канал продвижения своего проекта в виде личного блога. Добавите лояльности аудитории к своему проекту и увеличить продажи
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about__item">
-                        <picture class="about__icon">
-                            <img src="img/dist/about-online-05.svg" width="42px" height="42px" alt="Icon">
-                        </picture>
-                        <h3 class="about__title">Давно на рынке online, но доход не растет</h3>
-                        <div class="about__content content">
-                            <p>
-                                Научитесь продавать дороже. Освоите навык распаковки личности. Начнете формировать вокруг себя лояльное сообщество
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about__item">
-                        <picture class="about__icon">
-                            <img src="img/dist/about-online-06.svg" width="51px" height="43px" alt="Icon">
-                        </picture>
-                        <h3 class="about__title">Хотите зарабатывать в online</h3>
-                        <div class="about__content content">
-                            <p>
-                                Давно смотрите в сторону онлайна, но не знаете как и с чего начать? Программа предоставляет простые и понятные алгоритмы выхода в онлайн, как сразу с коммерческой страницы, так и через личный блог
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End of about -->
-        <!-- Author quote -->
-        <section class="author-quote" id="author-quote">
-            <div class="container">
-                <div class="author-quote__wrapper">
-                    <picture class="author-quote__img">
-                        <img src="img/dist/author-corporate-img.png" alt="Image">
-                    </picture>
-                    <div class="author-quote__body">
-                        <div class="author-quote__content content">
-                            <p>
-                                Начнете видеть свои слабые стороны 
-                                в продажах, а также слабые стороны своего персонала. Получите исчерпывающий набор знаний и инструментов, которые нужно обязательно внедрять в любом отделе продаж. Вы сможете изменить не только свой подход 
-                                к продажам, но и задавать четкий вектор развития для своих сотрудников
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End of author quote -->
-        <!-- Programm -->
-        <section class="programm" id="programm">
-            <div class="container">
+            <div class="switch-content" data-switch="online">
                 <h2 class="section-title programm__heading">
                     Программа курса<br>
                     <span>Online продажи</span>
                 </h2>
-                <div class="programm__wrapper">
+                <div class="programm__wrapper programm__wrapper--hidden">
                     <div class="programm__item">
                         <h3 class="programm__title">В курс Online входит вся программа Offline + 7 модулей по Online продажам</h3>
                         <div class="programm__content content">
@@ -485,11 +473,11 @@
                         </div>
                     </div>
                 </div>
+                <a href="#" class="programm__more">Показать полностью</a>
             </div>
-        </section>
-        <!-- End of programm -->
-    </div>
-    <!-- End of switch content -->
+        </div>
+    </section>
+    <!-- End of programm -->
     <!-- Gallery -->
     <section class="gallery" id="gallery">
         <div class="container">
