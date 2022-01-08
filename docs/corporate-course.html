@@ -143,11 +143,11 @@
     <div class="video">
         <div class="container">
             <div class="video__wrapper">
-                <div class="video__promo" style="background-image: url(img/dist/video-bg.png);">
+                <a href="https://www.youtube.com/SMKPKGW083c" class="video__promo" style="background-image: url(img/dist/video-bg.png);">
                     <h3 class="video__title">Приветственное видео Михаила&nbsp;Даудова</h3>
-                </div>
+                </a>
                 <div class="video__iframe">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SMKPKGW083c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="" frameborder="0" allowfullscreen loop muted></iframe>
                 </div>
             </div>
         </div>
@@ -321,32 +321,32 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="#" class="gallery__slide">
+                            <a href="img/dist/gallery-01.png" class="gallery__slide" data-fancybox="gallery">
                                 <img src="img/dist/gallery-01.png" alt="Image">
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="gallery__slide">
+                            <a href="img/dist/gallery-02.png" class="gallery__slide" data-fancybox="gallery">
                                 <img src="img/dist/gallery-02.png" alt="Image">
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="gallery__slide">
+                            <a href="img/dist/gallery-03.png" class="gallery__slide" data-fancybox="gallery">
                                 <img src="img/dist/gallery-03.png" alt="Image">
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="gallery__slide">
+                            <a href="img/dist/gallery-01.png" class="gallery__slide" data-fancybox="gallery">
                                 <img src="img/dist/gallery-01.png" alt="Image">
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="gallery__slide">
+                            <a href="img/dist/gallery-02.png" class="gallery__slide" data-fancybox="gallery">
                                 <img src="img/dist/gallery-02.png" alt="Image">
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="gallery__slide">
+                            <a href="img/dist/gallery-03.png" class="gallery__slide" data-fancybox="gallery">
                                 <img src="img/dist/gallery-03.png" alt="Image">
                             </a>
                         </div>
@@ -564,8 +564,8 @@
                                 <input type="text" class="feedback-form__input input" placeholder="Имя">
                             </div>
                             <div class="feedback-form__inner">
-                                <input type="text" class="feedback-form__input input" placeholder="Телефон*">
-                                <input type="text" class="feedback-form__input input" placeholder="Почта*">
+                                <input type="tel" class="feedback-form__input input" placeholder="Телефон*"  data-inputmask="'mask': '+7 (999) 999 99 99'">
+                                <input type="email" class="feedback-form__input input" placeholder="Почта*">
                             </div>
                             <button class="feedback-form__btn btn">Отправить</button>
                         </form>
