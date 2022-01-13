@@ -1,0 +1,123 @@
+.header {
+    position: absolute;
+    top: 39px;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+
+    @media screen and (max-width: 1199px) {
+        top: 0;
+        background: $white-color;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        right: -30px;
+        left: -30px;
+        padding: 16px 30px;
+        width: calc(100% + 60px);
+    }
+    @media screen and (max-width: 767px) {
+        right: -20px;
+        left: -20px;
+        padding: 16px 20px;
+        width: calc(100% + 40px);
+    }
+
+    &__wrapper {
+        @media screen and (max-width: 1199px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.logotype {
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (max-width: 1199px) {
+        max-width: 64px;
+        width: 100%;
+    }
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    padding: 0;
+    width: 30px;
+    height: 23px;
+    background: transparent;
+    border: none;
+    &__inner {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: $gold-color;
+        border-radius: 3px;
+        &:first-child {
+            top: 0;
+        }
+        &:nth-child(2) {
+            top: 11.5px;
+        }
+        &:last-child {
+            top: 23px;
+        }
+    }
+    &:focus {
+        outline: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.nav {
+    &--desktop {
+        @media screen and (max-width: 1199px) {
+            display: none;
+        }
+    }
+    &__list {
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__item {
+        &--active {
+            .nav__link {
+                font-weight: bold;
+                color: $gold-color;
+            }
+        }
+    }
+    &__item + &__item {
+        @media screen and (min-width: 1200px) {
+            margin-left: 30px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-top: 60px;
+        }
+        @media screen and (max-width: 767px) {
+            margin-top: 45px;
+        }
+    }
+    &__link {
+        font-size: 13px;
+        font-weight: normal;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            font-size: 30px;
+            line-height: 1.6;
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 25px;
+            line-height: 1.6;
+        }
+    }
+}

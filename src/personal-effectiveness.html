@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МД - Личная эффективность</title>
+    <!-- Font -->
+    <style>
+        @font-face{font-family:"Montserrat";font-style:normal;font-weight:400;font-display:swap;src:local("Montserrat"),url("fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),url("fonts/Montserrat/Montserrat-Regular.woff") format("woff"),url("fonts/Montserrat/Montserrat-Regular.eot") format("embedded-opentype")}@font-face{font-family:"Montserrat";font-style:normal;font-weight:500;font-display:swap;src:local("Montserrat"),url("fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"),url("fonts/Montserrat/Montserrat-Medium.woff") format("woff"),url("fonts/Montserrat/Montserrat-Medium.eot") format("embedded-opentype")}@font-face{font-family:"Montserrat";font-style:normal;font-weight:600;font-display:swap;src:local("Montserrat"),url("fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"),url("fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"),url("fonts/Montserrat/Montserrat-SemiBold.eot") format("embedded-opentype")}@font-face{font-family:"Montserrat";font-style:normal;font-weight:700;font-display:swap;src:local("Montserrat"),url("fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"),url("fonts/Montserrat/Montserrat-Bold.woff") format("woff"),url("fonts/Montserrat/Montserrat-Bold.eot") format("embedded-opentype")}@font-face{font-family:"Montserrat";font-style:normal;font-weight:800;font-display:swap;src:local("Montserrat"),url("fonts/Montserrat/Montserrat-ExtraBold.woff2") format("woff2"),url("fonts/Montserrat/Montserrat-ExtraBold.woff") format("woff"),url("fonts/Montserrat/Montserrat-ExtraBold.eot") format("embedded-opentype")}
+    </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="libs/aos/aos.css">
+    <link rel="stylesheet" href="libs/fancybox/fancybox.css">
+    <link rel="stylesheet" href="libs/swiper/swiper.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header" data-aos="fade-right">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="index.html" class="logotype">
+                    <img src="img/dist/logotype.svg" alt="МД">
+                </a>
+                <nav class="nav nav--desktop">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="sales-master.html" class="nav__link">Мастер продаж</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="personal-effectiveness.html" class="nav__link">Личная эффективность</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="corporate-course.html" class="nav__link">Корпоративный курс по продажам</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link contacts-btn">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- End of header -->
+    <!-- Main -->
+    <section class="main" id="main">
+        <div class="container">
+            <div class="main__wrapper">
+                <div class="main__offer">
+                    <h2 class="main__heading" data-aos="fade-right" data-aos-delay="50">Авторский курс </h2>
+                    <h1 class="main__title main__title--sm" data-aos="fade-right" data-aos-delay="100">Личная <br>эффективность</h1>
+                    <p class="main__text" data-aos="fade-right" data-aos-delay="150">Невозможно за один день измениться и стать другим человеком, но за один день можно изменить свое мышление и вектор развития, что впоследствии приведет Вас к кардинальным изменениям в жизни </p>
+                    <div class="main__inner" data-aos="fade-right" data-aos-delay="200">
+                        <a href="#" class="main__btn btn btn--before modal-btn" data-id="modal-feedback">Оставить заявку</a>
+                        <a href="#" class="main__btn btn btn--transparent btn--before">Оплатить сейчас</a>
+                    </div>
+                </div>
+                <picture class="main__img" data-aos="fade-in">
+                    <img src="img/dist/main-personal-bg.png" alt="Author">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <!-- End of main -->
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-menu__close close-btn" aria-label="Закрыть"></button>
+        <div class="mobile-menu__wrapper">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="sales-master.html" class="nav__link">Мастер продаж</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="personal-effectiveness.html" class="nav__link">Личная эффективность</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="corporate-course.html" class="nav__link">Корпоративный курс по продажам</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link contacts-btn">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- End of mobile menu -->
+    <!-- Contacts menu -->
+    <div class="contacts-menu" id="contacts-menu">
+        <button class="contacts-menu__close close-btn" aria-label="Закрыть"></button>
+        <div class="contacts-menu__wrapper">
+            <div class="contacts-menu__top">
+                <a href="index.html" class="logotype contacts-menu__logotype">
+                    <img src="img/dist/logotype-gold.svg" alt="МД">
+                </a>
+                <a href="#" class="contacts-menu__back">← Назад</a>
+            </div>
+            <div class="contacts-menu__center">
+                <h2 class="contacts-menu__title">Контакты</h2>
+                <div class="contacts-menu__group">
+                    <span class="contacts-menu__help">Телефон</span>
+                    <a href="tel:+78000000000" class="contacts-menu__link">+7 800 000 00 00</a>
+                </div>
+                <div class="contacts-menu__group">
+                    <span class="contacts-menu__help">E-mail</span>
+                    <a href="mailto:info@kursy.ru" class="contacts-menu__link">info@kursy.ru</a>
+                </div>
+            </div>
+            <div class="contacts-menu__bottom">
+                <div class="contacts-menu__block">
+                    <ul class="socials contacts-menu__socials">
+                        <li class="socials__item socials__item--active">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-socials-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="contacts-menu__help">Связаться</span>
+                </div>
+                <div class="contacts-menu__block">
+                    <ul class="socials contacts-menu__socials">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-socials-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-socials-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="contacts-menu__help">Соц. сети</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of contacts menu -->
+    <!-- Personal effectiveness -->
+    <section class="personal-effectiveness" id="personal-effectiveness">
+        <div class="container">
+            <h2 class="section-title personal-effectiveness__heading" data-aos="fade-in">Личная эффективность</h2>
+            <div class="personal-effectiveness__content content" data-aos="fade-up">
+                <p>Каждый человек периодически проживает этапы в жизни, когда складывается ощущение, что развитие нас, как личности, остановилось. Мы можем отчетливо понимать и чувствовать остановку прогресса и необходимость перемен. </p>
+                <p>Зачастую в этот момент, самая сложная задача - это понять, какую картину мира мы хотим видеть, что для этого нам нужно сделать и в каком направлении нам бы хотелось двигаться.  Что нам нравится в нашей жизни, а с чем мы мириться не готовы. Именно об этом мой авторский курс по личной эффективности. Он помог выйти из тупиковой жизненной ситуации мне, поможет и Вам. </p>
+                <p>Программа содержит 4 основных модуля, разбитых на темы. Каждый блок содержит видеоуроки, текстовые материалы и задания. Все, что Вам нужно сделать, это последовательно и внимательно пройти каждый блок. Выполнять задания, и постараться взять максимум пользы из курса.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End of personal effectiveness -->
+    <!-- Video -->
+    <div class="video">
+        <div class="container">
+            <div class="video__wrapper" data-aos="fade-in">
+                <a href="https://www.youtube.com/SMKPKGW083c" class="video__promo" style="background-image: url(img/dist/video-bg.png);">
+                    <h3 class="video__title">Приветственное видео Михаила&nbsp;Даудова</h3>
+                </a>
+                <div class="video__iframe">
+                    <iframe width="100%" height="100%" src="" frameborder="0" allowfullscreen loop muted></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of video -->
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title about__heading" data-aos="fade-in">Что нужно знать о Курсе</h2>
+            <div class="about__wrapper">
+                <div class="about__item" data-aos="fade-right">
+                    <picture class="about__icon">
+                        <img src="img/dist/about-pe-01.svg" width="65px" height="50px" alt="Icon">
+                    </picture>
+                    <h3 class="about__title">Видимый результат после таких курсов приходит после 6-12 месяцев работы над собой</h3>
+                    <div class="about__content content">
+                        <p>
+                            Видимый результат после таких курсов приходит после 6-12 месяцев работы над собой. Не ждите чуда! Чтобы трансформировать свое мышление и поведение на 80% - у меня ушло 2 года. И все изменения приходилось ВНЕДРЯТЬ в свою жизнь. Это сложно, неприятно, неудобно а иногда и страшно. Сложно признаваться себе в том, что выкинул на мусор последние 5 лет жизни.
+                            Особенно неприятно знакомиться с собой настоящим и брать ответственность на себя. Но результат и новая картина мира того стоят. Поверьте.
+                        </p>
+                    </div>
+                </div>
+                <div class="about__item" data-aos="fade-left">
+                    <picture class="about__icon">
+                        <img src="img/dist/about-pe-02.svg" width="49px" height="57px" alt="Icon">
+                    </picture>
+                    <h3 class="about__title">Если ничего не изменилось <br>- нужно разобраться в себе</h3>
+                    <div class="about__content content">
+                        <p>Если после курса вы не изменились, и никак не выросли, ничего не поменяли в укладе жизни и мышления - не покупайте больше никаких курсов и обучений. Вам нужно разобраться в себе и понять, почему, покупая курсы, Вы ничего не меняете в жизни, а занимаетесь поиском волшебных таблеток и готовых решений, тем самым, создавая иллюзию развития.</p>
+                    </div>
+                </div>
+                <div class="about__item" data-aos="fade-right">
+                    <picture class="about__icon">
+                        <img src="img/dist/about-pe-03.svg" width="40px" height="50px" alt="Icon">
+                    </picture>
+                    <h3 class="about__title">Будьте честны с собой</h3>
+                    <div class="about__content content">
+                        <p>Обмануть можно кого угодно. Себя обмануть невозможно. Спросите себя, хотите ли вы изменений или хотите просто их хотеть. Если ответ положительный - действуйте.</p>
+                    </div>
+                </div>
+                <div class="about__item" data-aos="fade-left">
+                    <picture class="about__icon">
+                        <img src="img/dist/about-pe-04.svg" width="53px" height="49px" alt="Icon">
+                    </picture>
+                    <h3 class="about__title">Относитесь к заданиям ответственно</h3>
+                    <div class="about__content content">
+                        <p>С какой целью вы пришли на курс, с таким результатом и уйдете. Курс - это инструмент. Работать с помощью инструмента Вы должны сами.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of about -->
+    <!-- Personal course -->
+    <section class="personal-course" id="personal-course">
+        <div class="container">
+            <h2 class="section-title personal-course__heading" data-aos="fade-in">Курс <span>Личная эффективность</span> <br>для Вас для Вас если Вы...</h2>
+            <div class="personal-course__wrapper personal-course__wrapper--reverse">
+                <div class="personal-course__left">
+                    <ul class="personal-course__list">
+                        <li class="personal-course__item" data-aos="fade-right">
+                            Хотите развиваться и чувствуете, <br>что давно стоите на месте 
+                        </li>
+                        <li class="personal-course__item" data-aos="fade-right">
+                            Осознаете необходимость перемен в жизни, <br>но не знаете, с чего начать
+                        </li>
+                        <li class="personal-course__item" data-aos="fade-right">
+                            Чувствуете, что жизнь зашла в тупик, <br>и Вам нужно из него выбраться
+                        </li>
+                        <li class="personal-course__item" data-aos="fade-right">
+                            Не можете понять, в каком направлении <br>Вам двигаться в жизни, и с чего нужно начинать
+                        </li>
+                        <li class="personal-course__item" data-aos="fade-right">
+                            Знаете, что нужно ставить цели и достигать их, <br>но не знаете, как это делать правильно
+                        </li>
+                        <li class="personal-course__item" data-aos="fade-right">
+                            Тратите огромное количество усилий и энергии, <br>но при этом стоите на месте, и никаких ощутимых <br>изменений в жизни не происходит
+                        </li>
+                        <li class="personal-course__item" data-aos="fade-right">
+                            Оглядываетесь на 3/5/7/10 лет назад и понимаете, <br>что годы прошли, но ничего в жизни в лучшую <br>сторону не изменилось
+                        </li>
+                        <li class="personal-course__item" data-aos="fade-right">
+                            Вы молоды, находитесь в начале жизненного пути, <br>и хотели бы знать, какая стратегия достижения целей наиболее эффективна и как не растерять бесцельно лучшие годы жизни
+                        </li>
+                    </ul>
+                </div>
+                <div class="personal-course__right">
+                    <picture class="personal-course__img" data-aos="fade-in">
+                        <img src="img/dist/personal-course-img.png" alt="Image">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of personal course -->
+    <!-- Author quote -->
+    <section class="author-quote" id="author-quote">
+        <div class="container">
+            <div class="author-quote__wrapper">
+                <picture class="author-quote__img" data-aos="fade-in">
+                    <img src="img/dist/qoute-author.png" alt="Image">
+                </picture>
+                <div class="author-quote__body">
+                    <div class="author-quote__content content" data-aos="fade-in">
+                        <p>
+                            Потребность развиваться и расти заложена 
+                            в ДНК человека. Потенциал как правило требует реализации. Как мы это понимаем? 
+                            По состоянию счастья и внутреннему голосу. Мы знаем, как бы мы хотели жить и кем бы мы хотели стать. Но зачастую, страхи 
+                            и негативные установки мешают нам реализовать свой потенциал. Этот курс - именно про это. Про поиск и реализацию себя
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of author quote -->
+    <!-- Programm -->
+    <section class="programm" id="programm">
+        <div class="container">
+            <h2 class="section-title programm__heading" data-aos="fade-in">
+                Программа курса<br>
+                <span>Личная эффективность</span>
+            </h2>
+            <div class="programm__wrapper programm__wrapper--hidden">
+                <div class="programm__item" data-aos="fade-right">
+                    <h3 class="programm__title">Самоанализ</h3>
+                    <div class="programm__content content">
+                        <ul>
+                            <li>60 вопросов к себе, ответы на которые дадут всю необходимую информацию для роста и развития</li>
+                            <li>Сформировать картины идеальной жизни и идеального дня</li>
+                            <li>Сформировать навыка постоянного самоанализа</li>
+                            <li>Сформировать или определение базовые жизненные ценности</li>
+                            <li>Осознать жизненные параметры графы дано с возможностью их изменения или без таковой</li>
+                            <li>Упражнение 10 личностей</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="programm__item" data-aos="fade-left">
+                    <h3 class="programm__title">Цели</h3>
+                    <div class="programm__content content">
+                        <ul>
+                            <li>Ресурсы и энергия для достижения целей</li>
+                            <li>Понятие и виды целей</li>
+                            <li>Техники постановки целей</li>
+                            <li>Факторы способствующие достижению целей</li>
+                            <li>Факторы мешающие достижению целей</li>
+                            <li>Упражнение 100 целей</li>
+                            <li>Мониторинг жизненного прогресса</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="programm__item" data-aos="fade-right">
+                    <h3 class="programm__title">Тайм Менеджмент. Привычки</h3>
+                    <div class="programm__content content">
+                        <ul>
+                            <li>Понятие и функции тайм менеджмента.</li>
+                            <li>Понять базовые принципы управления временем </li>
+                            <li>Научиться вести хронометраж дня</li>
+                            <li>Сформировать навык отслеживания “убийц времени” </li>
+                            <li>Выбрать и сформировать 1 большую и 3 маленькие привычки</li>
+                            <li>Найти временные резервы для 2-3 главных целей</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="programm__item" data-aos="fade-left">
+                    <h3 class="programm__title">Окружение</h3>
+                    <div class="programm__content content">
+                        <ul>
+                            <li>Каково влияние нашего окружения на нас?</li>
+                            <li>Как влиться в сильное окружение? </li>
+                            <li>Что делать если окружение вас тотально критикует? </li>
+                            <li>Нужно ли вообще человеку сильное окружение?</li>
+                            <li>Что делать, если сильного окружения нет и не предвидится?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="programm__item" data-aos="fade-right">
+                    <h3 class="programm__title">Мышление</h3>
+                    <div class="programm__content content">
+                        <ul>
+                            <li>Отрицательные и положительные установки в мышлении</li>
+                            <li>Как мыслят сильные и слабые люди </li>
+                            <li>Перекладывание ответственности на уровне мышления</li>
+                            <li>Когнитивные искажения и их влияние на нашу жизнь</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="programm__item" data-aos="fade-left">
+                    <h3 class="programm__title">Финансы</h3>
+                    <div class="programm__content content">
+                        <ul>
+                            <li>Основные понятия  финансовой грамотности </li>
+                            <li>Роль денег в нашей жизни и отношение к ним </li>
+                            <li>Способы увеличения личного дохода</li>
+                            <li>Контроль и планирование бюджета</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="programm__item" data-aos="fade-right">
+                    <h3 class="programm__title">Самооценка</h3>
+                    <div class="programm__content content">
+                        <ul>
+                            <li>Откуда берется наша самооценка</li>
+                            <li>Понятие и роль самооценки в нашей жизни</li>
+                            <li>Простые способы поднять самооценку</li>
+                            <li>Работа над самооценкой</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="programm__more">Показать полностью</a>
+        </div>
+    </section>
+    <!-- End of programm -->
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-in">Что уже было на курсах</h2>
+            <div class="gallery__slider" data-aos="fade-in">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="img/dist/gallery-01.png" class="gallery__slide" data-aos="fade-in" data-fancybox="gallery">
+                                <img src="img/dist/gallery-01.png" alt="Image">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/dist/gallery-02.png" class="gallery__slide" data-aos="fade-in" data-fancybox="gallery">
+                                <img src="img/dist/gallery-02.png" alt="Image">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/dist/gallery-03.png" class="gallery__slide" data-aos="fade-in" data-fancybox="gallery">
+                                <img src="img/dist/gallery-03.png" alt="Image">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/dist/gallery-01.png" class="gallery__slide" data-aos="fade-in" data-fancybox="gallery">
+                                <img src="img/dist/gallery-01.png" alt="Image">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/dist/gallery-02.png" class="gallery__slide" data-aos="fade-in" data-fancybox="gallery">
+                                <img src="img/dist/gallery-02.png" alt="Image">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/dist/gallery-03.png" class="gallery__slide" data-aos="fade-in" data-fancybox="gallery">
+                                <img src="img/dist/gallery-03.png" alt="Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-navigation">
+                    <button class="swiper-button-prev" aria-label="Назад">
+                        <svg class="swiper-button-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="swiper-button-next" aria-label="Далее">
+                        <svg class="swiper-button-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of gallery -->
+    <!-- Reviews -->
+    <section class="reviews reviews--mt" id="reviews">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-in" data-aos-offset="0">Отзывы студентов</h2>
+            <div class="reviews__slider" data-aos="fade-in" data-aos-offset="0">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="reviews__slide" data-aos="fade-in" data-aos-offset="0">
+                                <div class="reviews__top">
+                                    <picture class="reviews__img">
+                                        <img src="img/dist/" alt="">
+                                    </picture>
+                                    <div class="reviews__block">
+                                        <h3 class="reviews__name">Рамиз</h3>
+                                        <span class="reviews__login">login</span>
+                                    </div>
+                                </div>
+                                <div class="reviews__body">
+                                    <div class="content">
+                                        <p>
+                                            <b>Точка.  А</b><br>
+                                            1. Кем работал/а до курса.<br>
+                                            Ремонтно Строит компания<br>
+                                            2. Какой был доход.<br>
+                                            Чистый доход в среднем 200 тыс.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="reviews__more modal-btn" data-id="review-01">Читать подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__slide" data-aos="fade-in" data-aos-offset="0">
+                                <div class="reviews__top">
+                                    <picture class="reviews__img">
+                                        <img src="img/dist/" alt="">
+                                    </picture>
+                                    <div class="reviews__block">
+                                        <h3 class="reviews__name">Шамиль</h3>
+                                        <span class="reviews__login">login</span>
+                                    </div>
+                                </div>
+                                <div class="reviews__body">
+                                    <div class="content">
+                                        <p>
+                                            <b>Точка.  А</b><br>
+                                            1. Кем работал/а до курса.<br>
+                                            Работал до курса менеджером по продажам в магазине телефонов<br>
+                                            2. Какой был доход.<br>
+                                        </p>
+                                    </div>
+                                    <a href="#" class="reviews__more modal-btn" data-id="review-02">Читать подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__slide" data-aos="fade-in" data-aos-offset="0">
+                                <div class="reviews__top">
+                                    <picture class="reviews__img">
+                                        <img src="img/dist/" alt="">
+                                    </picture>
+                                    <div class="reviews__block">
+                                        <h3 class="reviews__name">Рамазан Маадов</h3>
+                                        <span class="reviews__login">login</span>
+                                    </div>
+                                </div>
+                                <div class="reviews__body">
+                                    <div class="content">
+                                        <p>
+                                            <b>Точка.  А</b><br>
+                                            1. Кем работал/а до курса.<br>
+                                            Менеджер по продажам.<br>
+                                            2. Какой был доход.<br>
+                                            35000-60000
+                                        </p>
+                                    </div>
+                                    <a href="#" class="reviews__more modal-btn" data-id="review-03">Читать подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__slide" data-aos="fade-in" data-aos-offset="0">
+                                <div class="reviews__top">
+                                    <picture class="reviews__img">
+                                        <img src="img/dist/" alt="">
+                                    </picture>
+                                    <div class="reviews__block">
+                                        <h3 class="reviews__name">Рамиз</h3>
+                                        <span class="reviews__login">login</span>
+                                    </div>
+                                </div>
+                                <div class="reviews__body">
+                                    <div class="content">
+                                        <p>
+                                            <b>Точка.  А</b><br>
+                                            1. Кем работал/а до курса.<br>
+                                            Ремонтно Строит компания<br>
+                                            2. Какой был доход.<br>
+                                            Чистый доход в среднем 200 тыс.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="reviews__more modal-btn" data-id="review-01">Читать подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__slide" data-aos="fade-in" data-aos-offset="0">
+                                <div class="reviews__top">
+                                    <picture class="reviews__img">
+                                        <img src="img/dist/" alt="">
+                                    </picture>
+                                    <div class="reviews__block">
+                                        <h3 class="reviews__name">Шамиль</h3>
+                                        <span class="reviews__login">login</span>
+                                    </div>
+                                </div>
+                                <div class="reviews__body">
+                                    <div class="content">
+                                        <p>
+                                            <b>Точка.  А</b><br>
+                                            1. Кем работал/а до курса.<br>
+                                            Работал до курса менеджером по продажам в магазине телефонов<br>
+                                            2. Какой был доход.<br>
+                                        </p>
+                                    </div>
+                                    <a href="#" class="reviews__more modal-btn" data-id="review-02">Читать подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__slide" data-aos="fade-in" data-aos-offset="0">
+                                <div class="reviews__top">
+                                    <picture class="reviews__img">
+                                        <img src="img/dist/" alt="">
+                                    </picture>
+                                    <div class="reviews__block">
+                                        <h3 class="reviews__name">Рамазан Маадов</h3>
+                                        <span class="reviews__login">login</span>
+                                    </div>
+                                </div>
+                                <div class="reviews__body">
+                                    <div class="content">
+                                        <p>
+                                            <b>Точка.  А</b><br>
+                                            1. Кем работал/а до курса.<br>
+                                            Менеджер по продажам.<br>
+                                            2. Какой был доход.<br>
+                                            35000-60000
+                                        </p>
+                                    </div>
+                                    <a href="#" class="reviews__more modal-btn" data-id="review-01">Читать подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-navigation">
+                    <button class="swiper-button-prev" aria-label="Назад">
+                        <svg class="swiper-button-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="swiper-button-next" aria-label="Далее">
+                        <svg class="swiper-button-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of reviews -->
+    <!-- Feedback -->
+    <section class="feedback" id="feedback" data-aos="fade-up" data-aos-offset="-400">
+        <div class="container">
+            <div class="feedback__form">
+                <div class="feedback__wrapper">
+                    <div class="feedback__left">
+                        <h2 class="section-title feedback__heading">Оставьте свои данные, для связи</h2>
+                        <div class="content">
+                            <p>
+                                Оставляя данные, я соглашаюсь <br>
+                                на обработку персональных данных и <br>
+                                с правилами пользования Платформой
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback__right">
+                        <form action="#" class="feedback-form">
+                            <div class="feedback-form__inner">
+                                <div class="input-group feedback-form__input">
+                                    <div class="input-group__control">
+                                        <input type="text" class="input-group__input" id="input-name" placeholder="Имя" required>
+                                        <label for="input-name" class="input-group__label">Имя</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback-form__inner">
+                                <div class="input-group feedback-form__input">
+                                    <div class="input-group__control">
+                                        <input type="tel" class="input-group__input" id="input-tel" placeholder="Телефон*" data-inputmask="'mask': '+7 (999) 999 99 99'" required>
+                                        <label for="input-tel" class="input-group__label">Телефон*</label>
+                                    </div>
+                                </div>
+                                <div class="input-group feedback-form__input">
+                                    <div class="input-group__control">
+                                        <input type="email" class="input-group__input" id="input-email" placeholder="Почта*" required>
+                                        <label for="input-email" class="input-group__label">Почта*</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="feedback-form__btn btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+                <p class="feedback__help">* - обязательные для заполнения поля</p>
+            </div>
+        </div>
+    </section>
+    <!-- End of feedback -->
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer__main" data-aos="fade-in" data-aos-offset="-400">
+            <div class="container">
+                <div class="footer__wrapper footer__wrapper--end">
+                    <div class="footer__block">
+                        <a href="tel:+78000000000" class="footer__phone">+7 800 000 00 00</a>
+                        <span class="footer__help">Пн-пт 10:00 - 20:00</span>
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Курсе второй</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Курсе первый</a>
+                        </li>
+                    </ul>
+                    <ul class="socials footer__socials">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-socials-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-socials-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-socials-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <p class="footer__copyright">Copyright 2021</p>
+                    <a href="#" class="footer__link">Политика обработкие персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer -->
+    <!-- Modal -->
+    <div class="modal" id="modal-feedback">
+        <div class="modal__wrapper modal__wrapper--sm">
+            <button class="modal__close close-btn" aria-label="Закрыть"></button>
+            <div class="modal__form">
+                <div class="feedback__wrapper feedback__wrapper--column">
+                    <div class="feedback__left">
+                        <h2 class="section-title feedback__heading">Оставьте свои данные, для связи</h2>
+                        <div class="content">
+                            <p>
+                                Оставляя данные, я соглашаюсь <br>
+                                на обработку персональных данных и <br>
+                                с правилами пользования Платформой
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback__right">
+                        <form action="#" class="feedback-form">
+                            <div class="feedback-form__inner">
+                                <div class="input-group feedback-form__input">
+                                    <div class="input-group__control">
+                                        <input type="text" class="input-group__input" id="input-modal-name" placeholder="Имя" required>
+                                        <label for="input-modal-name" class="input-group__label">Имя</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback-form__inner">
+                                <div class="input-group feedback-form__input">
+                                    <div class="input-group__control">
+                                        <input type="tel" class="input-group__input" id="input-modal-tel" placeholder="Телефон*" data-inputmask="'mask': '+7 (999) 999 99 99'" required>
+                                        <label for="input-modal-tel" class="input-group__label">Телефон*</label>
+                                    </div>
+                                </div>
+                                <div class="input-group feedback-form__input">
+                                    <div class="input-group__control">
+                                        <input type="email" class="input-group__input" id="input-modal-email" placeholder="Почта*" required>
+                                        <label for="input-modal-email" class="input-group__label">Почта*</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="feedback-form__btn btn">Отправить</button>
+                        </form>
+                    </div>
+                    <p class="feedback__help">* - обязательные для заполнения поля</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="review-01">
+        <div class="modal__wrapper">
+            <button class="modal__close close-btn" aria-label="Закрыть"></button>
+            <div class="reviews">
+                <div class="reviews__top">
+                    <picture class="reviews__img">
+                        <img src="img/dist/" alt="">
+                    </picture>
+                    <div class="reviews__block">
+                        <h3 class="reviews__name">Рамиз</h3>
+                        <span class="reviews__login">login</span>
+                    </div>
+                </div>
+                <div class="reviews__body content">
+                    <p>
+                        <b>Точка.  А</b><br><br>
+
+                        1. Кем работал/а до курса.<br>
+                        Ремонтно Строит компания<br><br>
+
+                        2. Какой был доход.<br>
+                        Чистый доход в среднем 200 тыс.<br><br>
+                        
+                        3. Почему доход не рос ?<br>
+                        Небольшая команда, плохо ищу и разбираюсь в людях.<br><br>
+                        
+                        4.Основная причина покупки курса ?<br>
+                        Научиться техникам продаж.<br><br>
+
+                        5. Какие сомнения и страхи были перед покупкой курса ? <br>
+                        Никаких.<br><br>
+
+                        6. Они оправдались ?<br>
+                        Так как страхов и сомнений не было, не оправдались. <br><br>
+
+                        <b>Точка. Б</b><br>
+                        1. Что изменилось в жизни после курса ? (навыки, мышление, крупные покупки, переезд, окружение, хобби) <br>
+                        Начал понимать техники продаж и оттачивать их.<br><br>
+
+                        2. Какой доход сейчас ? (вырос ли после курса и на сколько) <br>
+                        Примерно такой же.<br><br>
+
+                        3. Кому Вы бы порекомендовали этот курс ?<br>
+                        Всем - мы каждый день что-то продаём прямо или косвенно.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="review-02">
+        <div class="modal__wrapper">
+            <button class="modal__close close-btn" aria-label="Закрыть"></button>
+            <div class="reviews">
+                <div class="reviews__top">
+                    <picture class="reviews__img">
+                        <img src="img/dist/" alt="">
+                    </picture>
+                    <div class="reviews__block">
+                        <h3 class="reviews__name">Шамиль</h3>
+                        <span class="reviews__login">login</span>
+                    </div>
+                </div>
+                <div class="reviews__body content">
+                    <p>
+                        <b>Точка.  А</b><br><br>
+
+                        1. Кем работал/а до курса.<br>
+                        Ремонтно Строит компания<br><br>
+
+                        2. Какой был доход.<br>
+                        Чистый доход в среднем 200 тыс.<br><br>
+                        
+                        3. Почему доход не рос ?<br>
+                        Небольшая команда, плохо ищу и разбираюсь в людях.<br><br>
+                        
+                        4.Основная причина покупки курса ?<br>
+                        Научиться техникам продаж.<br><br>
+
+                        5. Какие сомнения и страхи были перед покупкой курса ? <br>
+                        Никаких.<br><br>
+
+                        6. Они оправдались ?<br>
+                        Так как страхов и сомнений не было, не оправдались. <br><br>
+
+                        <b>Точка. Б</b><br>
+                        1. Что изменилось в жизни после курса ? (навыки, мышление, крупные покупки, переезд, окружение, хобби) <br>
+                        Начал понимать техники продаж и оттачивать их.<br><br>
+
+                        2. Какой доход сейчас ? (вырос ли после курса и на сколько) <br>
+                        Примерно такой же.<br><br>
+
+                        3. Кому Вы бы порекомендовали этот курс ?<br>
+                        Всем - мы каждый день что-то продаём прямо или косвенно.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="review-03">
+        <div class="modal__wrapper">
+            <button class="modal__close close-btn" aria-label="Закрыть"></button>
+            <div class="reviews">
+                <div class="reviews__top">
+                    <picture class="reviews__img">
+                        <img src="img/dist/" alt="">
+                    </picture>
+                    <div class="reviews__block">
+                        <h3 class="reviews__name">Рамазан Маадов</h3>
+                        <span class="reviews__login">login</span>
+                    </div>
+                </div>
+                <div class="reviews__body content">
+                    <p>
+                        <b>Точка.  А</b><br><br>
+
+                        1. Кем работал/а до курса.<br>
+                        Ремонтно Строит компания<br><br>
+
+                        2. Какой был доход.<br>
+                        Чистый доход в среднем 200 тыс.<br><br>
+                        
+                        3. Почему доход не рос ?<br>
+                        Небольшая команда, плохо ищу и разбираюсь в людях.<br><br>
+                        
+                        4.Основная причина покупки курса ?<br>
+                        Научиться техникам продаж.<br><br>
+
+                        5. Какие сомнения и страхи были перед покупкой курса ? <br>
+                        Никаких.<br><br>
+
+                        6. Они оправдались ?<br>
+                        Так как страхов и сомнений не было, не оправдались. <br><br>
+
+                        <b>Точка. Б</b><br>
+                        1. Что изменилось в жизни после курса ? (навыки, мышление, крупные покупки, переезд, окружение, хобби) <br>
+                        Начал понимать техники продаж и оттачивать их.<br><br>
+
+                        2. Какой доход сейчас ? (вырос ли после курса и на сколько) <br>
+                        Примерно такой же.<br><br>
+
+                        3. Кому Вы бы порекомендовали этот курс ?<br>
+                        Всем - мы каждый день что-то продаём прямо или косвенно.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay"></div>
+    <!-- End of modal -->
+    <!-- Scripts -->
+    <script src="libs/aos/aos.js"></script>
+    <script src="libs/fancybox/fancybox.umd.js"></script>
+    <script src="libs/inputmask/inputmask.min.js"></script>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+    transform: translateX(104%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 70px 70px 50px;
+    width: 495px;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    visibility: hidden;
+    opacity: 0;
+    background: $white-color;
+    transition: all 0.2s ease-in-out;
+    &--active {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 32px;
+
+        @media screen and (max-width: 767px) {
+            right: 24px;
+        }
+    }
+    &__wrapper {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 50px 50px 50px 20px;
+        width: 100%;
+    }
+}

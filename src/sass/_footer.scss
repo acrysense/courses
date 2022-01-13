@@ -1,0 +1,111 @@
+.footer {
+    position: relative;
+    z-index: 1;
+    
+    @media screen and (max-width: 1023px) {
+        margin-top: 30px;
+    }
+
+    &__main {
+        padding: 145px 0 73px;
+        color: $primary-color;
+        background: $light-grey-color;
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            padding: 55px 0 73px;
+        }
+        @media screen and (max-width: 767px) {
+            padding: 40px 0 50px;
+        }
+    }
+    &__bottom {
+        padding: 7.5px 0;
+        color: $white-color;
+        background: $primary-color;
+        .footer__link {
+            font-size: 12px;
+            line-height: 1.6;
+            color: $white-color;
+            &:hover {
+                color: $gold-color;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            padding: 27px 0;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        &--end {
+            align-items: flex-end;
+        }
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            &--end {
+                align-items: flex-start;
+            }
+        }
+    }
+    &__phone {
+        font-size: 24px;
+        font-weight: 800;
+
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+        }
+    }
+    &__help {
+        display: block;
+        margin-top: 5px;
+        color: rgba($primary-color, 0.5);
+
+        @media screen and (max-width: 767px) {
+            margin-top: 10px;
+        }
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 1023px) {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        @media screen and (max-width: 767px) {
+            margin-top: 30px;
+        }
+    }
+    &__item + &__item {
+        margin-left: 53px;
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            margin-top: 10px;
+            margin-left: 0;
+        }
+        @media screen and (max-width: 767px) {
+            margin-top: 15px;
+            margin-left: 0;
+        }
+    }
+    &__link {
+        font-size: 16px;
+    }
+    &__socials {
+        @media screen and (max-width: 767px) {
+            margin-top: 30px;
+        }
+    }
+    &__copyright {
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.6;
+    }
+    &__copyright + &__link {
+        @media screen and (max-width: 767px) {
+            margin-top: 15px;
+        }
+    }
+}

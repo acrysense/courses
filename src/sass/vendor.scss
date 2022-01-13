@@ -1,0 +1,21 @@
+// FONTS LOAD SECTION
+@mixin font($fname, $fstyle, $fweight, $furl1, $furl2, $furl3) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		font-display: swap;
+        src: local($fname), url($furl1) format('woff2'), url($furl2) format('woff'), url($furl3) format('embedded-opentype');
+    }
+}
+
+@include font('Montserrat', normal, 400, '../fonts/Montserrat/Montserrat-Regular.woff2', '../fonts/Montserrat/Montserrat-Regular.woff', '../fonts/Montserrat/Montserrat-Regular.eot');
+@include font('Montserrat', normal, 500, '../fonts/Montserrat/Montserrat-Medium.woff2', '../fonts/Montserrat/Montserrat-Medium.woff', '../fonts/Montserrat/Montserrat-Medium.eot');
+@include font('Montserrat', normal, 600, '../fonts/Montserrat/Montserrat-SemiBold.woff2', '../fonts/Montserrat/Montserrat-SemiBold.woff', '../fonts/Montserrat/Montserrat-SemiBold.eot');
+@include font('Montserrat', normal, 700, '../fonts/Montserrat/Montserrat-Bold.woff2', '../fonts/Montserrat/Montserrat-Bold.woff', '../fonts/Montserrat/Montserrat-Bold.eot');
+@include font('Montserrat', normal, 800, '../fonts/Montserrat/Montserrat-ExtraBold.woff2', '../fonts/Montserrat/Montserrat-ExtraBold.woff', '../fonts/Montserrat/Montserrat-ExtraBold.eot');
+
+// IMPORT SECTION
+@import 'node_modules/swiper/swiper.scss'; // Swiper
+@import 'node_modules/@fancyapps/ui/dist/fancybox'; // Fancybox
+@import 'node_modules/aos/dist/aos'; // AOS

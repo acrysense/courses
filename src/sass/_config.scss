@@ -1,0 +1,361 @@
+// import
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+
+// variables
+$primary-font-family: 'Montserrat', sans-serif; // Body font-family
+$primary-font-size: 16px; // Body font-size
+$primary-line-height: 1.25; // Body line-height
+$primary-color: #000000;
+$white-color: #FFFFFF;
+$black-color: #272727;
+$gold-color: #BE925A;
+$light-gold-color: #CBA676;
+$grey-color: #B1B1B1;
+$light-grey-color: #F1F1F1;
+
+// common document styles - tags
+html {
+    overflow-x: hidden;
+}
+
+*[data-aos] {
+    will-change: transform, opacity;
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+    font-family: $primary-font-family;
+    font-size: $primary-font-size;
+    line-height: $primary-line-height;
+}
+
+ul,
+ol,
+li {
+	display: block;
+	padding: 0;
+	margin: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 130px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: $black-color;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 80px;
+    }
+    @media screen and (max-width: 767px) {
+        font-size: 40px;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    color: $primary-color;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: $gold-color;
+        text-decoration: none;
+    }
+    &:active {
+        color: $gold-color;
+        transition: all 0.1s linear;
+    }
+}
+
+picture {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+svg,
+svg path,
+svg line {
+    transition: all 0.3s ease;
+}
+
+// common document styles - class
+.scroll-disabled {
+    overflow: hidden;
+}
+
+.container {
+	margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1240px;
+    width: 100%;
+
+    @media screen and (max-width: 767px) {
+        padding: 0 20px;
+    }
+}
+
+.section-title {
+    margin-bottom: 40px;
+    font-size: 35px;
+    font-weight: 800;
+    color: $black-color;
+    & > span {
+        color: $gold-color;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+}
+
+.btn {
+    position: relative;
+    display: block;
+    padding: 14px 20px;
+    min-width: 220px;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: $white-color;
+    background: $gold-color;
+    border: 1px solid $gold-color;
+    border-radius: 2px;
+    transition: all 0.15s ease-in-out;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        color: $white-color;
+        background: $light-gold-color;
+        border: 1px solid $light-gold-color;
+    }
+    &:active {
+        color: $white-color;
+        background: $gold-color;
+        border: 1px solid $gold-color;
+    }
+    &--transparent {
+        font-weight: bold;
+        letter-spacing: 0.02em;
+        color: $gold-color;
+        background: $white-color;
+        &:hover {
+            color: $white-color;
+            background: $light-gold-color;
+        }
+        &:active {
+            color: $white-color;
+        }
+    }
+    &--before {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        letter-spacing: 0.02em;
+        &::before {
+            content: '';
+            position: absolute;
+            right: -10px;
+            bottom: -10px;
+            z-index: -1;
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 1px solid $gold-color;
+            border-radius: 2px;
+        }
+        &:hover {
+            &::before {
+                border: 1px solid $light-gold-color;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-right: 15px;
+            &::before {
+                right: -15px;
+            }
+        }
+    }
+}
+
+.input {
+    display: block;
+    padding: 0 0 5px 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: $primary-color;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #DADADA;
+    border-radius: 0;
+    &::placeholder {
+        color: $primary-color;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.close-btn {
+    display: block;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    background-image: url(../img/dist/sprite.svg#icon-close);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: fit-content;
+    &--no-checked {
+        .switch__help:first-child {
+            color: $gold-color;
+        }
+    }
+    &__input {
+        display: block;
+        margin: 0 30px;
+        width: 46px;
+        height: 25px;
+        appearance: none;
+        cursor: pointer;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 46px;
+            height: 25px;
+            border: 2px solid $gold-color;
+            border-radius: 30px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            margin-top: 3px;
+            margin-left: 4px;
+            width: 19px;
+            height: 19px;
+            background: $gold-color;
+            border-radius: 50%;
+            transition: all 0.2s ease-in-out;
+        }
+        &:checked {
+            &::after {
+                margin-left: 23px;
+            }
+        }
+        &:checked ~ .switch__help {
+            color: $gold-color;
+        }
+
+        @media screen and (min-width: 360px) and (max-width: 767px) {
+            margin: 0 20px;
+        }
+        @media screen and (max-width: 359px) {
+            margin: 0 12px;
+        }
+    }
+    &__help {
+        display: block;
+        font-size: 35px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: $black-color;
+        user-select: none;
+        transition: all 0.2s ease-in-out;
+
+        @media screen and (max-width: 767px) {
+            font-size: 25px;
+        }
+    }
+}
+
+.switch-content {
+    &:not(.switch-content--active) {
+        display: none;
+    }
+    &--active {
+        display: block;
+    }
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    &__control {
+        position: relative;
+    }
+    &__input,
+    &__textarea {
+        display: block;
+        appearance: none;
+        padding: 0 0 5px 0;
+        width: 100%;
+        font-size: 16px;
+        font-weight: normal;
+        color: $primary-color;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #DADADA;
+        border-radius: 0;
+        &::-webkit-input-placeholder {
+            opacity: 0;
+        }
+        &::-moz-placeholder {
+            opacity: 0;
+        }
+        &:focus ~ label,
+        &:not(:placeholder-shown) ~ label {
+            top: -12px;
+            transform: translateX(-14%) translateY(-50%) scale(0.75);
+            color: rgba($primary-color, 0.5);
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__textarea {
+        overflow: hidden;
+        resize: none;
+    }
+    &__label {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        margin: 0;
+        font-size: 16px;
+        font-weight: normal;
+        color: $primary-color;
+        background: $white-color;
+        cursor: text;
+        transition: all 0.15s ease-in-out;
+    }
+}

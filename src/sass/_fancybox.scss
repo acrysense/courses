@@ -1,0 +1,96 @@
+a[data-fancybox] img {
+    cursor: zoom-in;
+}
+  
+.fancybox__container {
+    --fancybox-color: #ffffff;
+    --fancybox-bg: rgba(39, 39, 39, 0.7);
+
+    --carousel-button-svg-stroke-width: 1.3;
+    --carousel-button-svg-filter: none;
+    --carousel-button-width: 45px;
+    --carousel-button-height: 45px;
+    --carousel-button-svg-width: 23px;
+    --carousel-button-svg-height: 23px;
+
+    @media screen and (max-width: 1199px) {
+        --fancybox-color: #B1B1B1;
+        --fancybox-bg: #272727;
+        --carousel-button-svg-stroke-width: 3;
+    }
+}
+
+.fancybox__nav {
+    --carousel-button-svg-stroke-width: 2.5;
+    --carousel-button-svg-width: 16px;
+    --carousel-button-svg-height: 16px;
+}
+
+.fancybox__container .fancybox__carousel {
+    margin: 0;
+}
+
+.fancybox__container .fancybox__slide {
+    padding: 60px 250px;
+
+    @media screen and (max-width: 1199px) {
+        padding: 60px 0;
+    }
+}
+
+.fancybox__container .carousel__dots {
+    top: calc(100% - 55px);
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    padding: 0 6px;
+    color: #fff;
+    border-radius: 2px;
+    z-index: 1052;
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.carousel__button.is-close {
+    top: 60px;
+    right: 60px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        top: 10px;
+        right: 12px;
+    }
+    @media screen and (max-width: 767px) {
+        top: 4px;
+        right: 6px;
+    }
+}
+
+.carousel__button.is-prev,
+.carousel__button.is-next {
+    border: 2px solid $white-color;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+.carousel__button.is-prev {
+    left: 175px!important;
+}
+.carousel__button.is-next {
+    right: 175px!important;
+}
+
+.carousel__dots .carousel__dot {
+    width: 18px;
+    height: 18px;
+}
+
+.carousel__dots .carousel__dot:after {
+    opacity: 0.5;
+}
+
+.carousel__dots .carousel__dot.is-selected:after {
+    background: $gold-color;
+}
