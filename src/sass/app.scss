@@ -104,6 +104,8 @@
         }
     }
     &__title {
+        max-width: 764px;
+        width: 100%;
         &--sm {
             font-size: 75px;
         }
@@ -2103,6 +2105,21 @@
             .swiper-pagination {
                 display: none;
             }
+        }
+    }
+    &__slide {
+        display: block;
+        overflow: hidden;
+        height: 272px;
+        & > img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media screen and (max-width: 767px) {
+            height: 240px;
         }
     }
 }

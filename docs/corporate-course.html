@@ -571,10 +571,10 @@
                         </div>
                     </div>
                     <div class="feedback__right">
-                        <form action="#" class="feedback-form">
+                        <form action="#" class="feedback-form" novalidate>
                             <div class="feedback-form__inner">
                                 <div class="input-group feedback-form__input">
-                                    <div class="input-group__control">
+                                    <div class="input-group__control input-group__control--error">
                                         <input type="text" class="input-group__input" id="input-name" placeholder="Имя" required>
                                         <label for="input-name" class="input-group__label">Имя</label>
                                     </div>
@@ -583,7 +583,7 @@
                             <div class="feedback-form__inner">
                                 <div class="input-group feedback-form__input">
                                     <div class="input-group__control">
-                                        <input type="tel" class="input-group__input" id="input-tel" placeholder="Телефон*" data-inputmask="'mask': '+7 (999) 999 99 99'" required>
+                                        <input type="tel" class="input-group__input" id="input-tel" placeholder="Телефон*" data-inputmask="'mask': '+7 (999) 999 - 99 - 99'" inputmode="tel" required>
                                         <label for="input-tel" class="input-group__label">Телефон*</label>
                                     </div>
                                 </div>
@@ -673,7 +673,7 @@
                         </div>
                     </div>
                     <div class="feedback__right">
-                        <form action="#" class="feedback-form">
+                        <form action="#" class="feedback-form" novalidate>
                             <div class="feedback-form__inner">
                                 <div class="input-group feedback-form__input">
                                     <div class="input-group__control">
@@ -685,7 +685,7 @@
                             <div class="feedback-form__inner">
                                 <div class="input-group feedback-form__input">
                                     <div class="input-group__control">
-                                        <input type="tel" class="input-group__input" id="input-modal-tel" placeholder="Телефон*" data-inputmask="'mask': '+7 (999) 999 99 99'" required>
+                                        <input type="tel" class="input-group__input" id="input-modal-tel" placeholder="Телефон*" data-inputmask="'mask': '+7 (999) 999 99 99'" inputmode="tel" required>
                                         <label for="input-modal-tel" class="input-group__label">Телефон*</label>
                                     </div>
                                 </div>

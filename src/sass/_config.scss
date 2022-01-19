@@ -12,6 +12,7 @@ $gold-color: #BE925A;
 $light-gold-color: #CBA676;
 $grey-color: #B1B1B1;
 $light-grey-color: #F1F1F1;
+$red-color: #D30000;
 
 // common document styles - tags
 html {
@@ -339,6 +340,10 @@ svg line {
         }
         &:focus {
             outline: none;
+        }
+        &.is--error {
+            color: $red-color;
+            border-bottom: 1px solid $red-color;
         }
     }
     &__textarea {

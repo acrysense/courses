@@ -98,6 +98,31 @@ document.addEventListener('DOMContentLoaded', function () {
         duration: 700,
         once: true,
     })
+
+    // FORM VALIDATE
+    const formValidate = document.querySelectorAll('.feedback-form');
+
+    if (formValidate) {
+        formValidate.forEach(item => {
+            item.addEventListener('submit', (event) => {
+                const formInput = item.querySelectorAll('.input-group__input');
+                let validateCounter = formInput.length
+        
+                for (let input of formInput) {
+                    if (input.validity.valid === false) {
+                        input.classList.add('is--error')
+                    } else {
+                        input.classList.remove('is--error')
+                        validateCounter -= 1
+                    }
+                }
+        
+                if (validateCounter >= 1) {
+                    event.preventDefault()
+                }
+            });
+        })
+    }
     
     // SWITCH
     const switchInput = document.querySelectorAll('.switch__input')
