@@ -648,8 +648,10 @@
                         <form action="#" class="feedback-form" novalidate>
                             <div class="feedback-form__inner">
                                 <div class="input-group feedback-form__input">
-                                    <div class="input-group__control input-group__control--error">
-                                        <input type="text" class="input-group__input" id="input-name" placeholder="Имя" required>
+                                    <div class="input-group__control">
+                                        <span>
+                                            <input type="text" class="input-group__input" id="input-name" placeholder="Имя" required>
+                                        </span>
                                         <label for="input-name" class="input-group__label">Имя</label>
                                     </div>
                                 </div>
@@ -657,13 +659,17 @@
                             <div class="feedback-form__inner">
                                 <div class="input-group feedback-form__input">
                                     <div class="input-group__control">
-                                        <input type="tel" class="input-group__input" id="input-tel" placeholder="Телефон*" data-inputmask="'mask': '+7 (999) 999 - 99 - 99'" inputmode="tel" required>
+                                        <span>
+                                            <input type="tel" class="input-group__input" id="input-tel" placeholder="Телефон*" data-inputmask="'mask': '+7 (999) 999 - 99 - 99'" inputmode="tel" required>
+                                        </span>
                                         <label for="input-tel" class="input-group__label">Телефон*</label>
                                     </div>
                                 </div>
                                 <div class="input-group feedback-form__input">
                                     <div class="input-group__control">
-                                        <input type="email" class="input-group__input" id="input-email" placeholder="Почта*" required>
+                                        <span>
+                                            <input type="email" class="input-group__input" id="input-email" placeholder="Почта*" required>
+                                        </span>
                                         <label for="input-email" class="input-group__label">Почта*</label>
                                     </div>
                                 </div>
@@ -723,8 +729,11 @@
         <div class="footer__bottom">
             <div class="container">
                 <div class="footer__wrapper">
-                    <p class="footer__copyright">Copyright 2021</p>
-                    <a href="#" class="footer__link">Политика обработкие персональных данных</a>
+                    <div class="footer__group">
+                        <p class="footer__copyright">Copyright 2021</p>
+                        <a href="#" class="footer__link">Политика обработкие персональных данных</a>
+                    </div>
+                    <p class="footer__copyright">Разработано в <a href="#">«Mosco-web»</a></p>
                 </div>
             </div>
         </div>

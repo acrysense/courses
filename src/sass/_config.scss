@@ -362,5 +362,10 @@ svg line {
         background: $white-color;
         cursor: text;
         transition: all 0.15s ease-in-out;
+        &--active {
+            top: -12px;
+            transform: translateX(-14%) translateY(-50%) scale(0.75);
+            color: rgba($primary-color, 0.5);
+        }
     }
 }

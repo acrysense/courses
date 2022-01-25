@@ -98,14 +98,35 @@
             margin-top: 30px;
         }
     }
+    &__group {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__group + &__copyright {
+        @media screen and (max-width: 767px) {
+            margin-top: 15px;
+        }
+    }
     &__copyright {
         font-size: 12px;
         font-weight: normal;
         line-height: 1.6;
+        a {
+            text-decoration: underline;
+            color: $white-color;
+            &:hover {
+                color: $gold-color;
+            }
+        }
     }
     &__copyright + &__link {
+        margin-left: 50px;
+
         @media screen and (max-width: 767px) {
             margin-top: 15px;
+            margin-left: 0;
         }
     }
 }

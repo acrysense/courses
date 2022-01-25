@@ -99,6 +99,25 @@ document.addEventListener('DOMContentLoaded', function () {
         once: true,
     })
 
+    // INPUT GROUP
+    const allInput = document.querySelectorAll('.input-group__input')
+
+    if (allInput) {
+        allInput.forEach(item => {
+            const inputControl = item.closest('.input-group__control')
+            const inputLabel = inputControl.querySelector('.input-group__label')
+
+            item.addEventListener('focus', () => {
+                inputLabel.classList.add('input-group__label--active')
+            })
+            item.addEventListener('blur', () => {
+                if (item.value.length < 1) {
+                    inputLabel.classList.remove('input-group__label--active')
+                }
+            })
+        })
+    }
+
     // FORM VALIDATE
     const formValidate = document.querySelectorAll('.feedback-form');
 
