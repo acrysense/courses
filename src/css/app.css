@@ -1201,6 +1201,11 @@ svg line {
   width: 680px;
 }
 
+.modal__wrapper--sm .modal__close {
+  top: 40px;
+  right: 40px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .modal__wrapper {
     padding: 40px 40px 48px 40px;
@@ -1255,6 +1260,32 @@ svg line {
   }
   .modal__form .feedback__help {
     margin-top: 20px;
+  }
+}
+
+.modal__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.modal__done {
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .modal__done {
+    display: none;
   }
 }
 
@@ -3403,6 +3434,36 @@ a[data-fancybox] img {
   .feedback__help {
     margin-top: 25px;
   }
+}
+
+.feedback__success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 0 50px;
+  height: 100%;
+}
+
+.feedback__done {
+  display: block;
+  margin: 0 auto 22px;
+  width: 68px;
+  height: 68px;
+  background-image: url(../img/dist/sprite.svg#icon-done);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.feedback__success-title {
+  margin: 0;
 }
 
 .feedback-form__inner {

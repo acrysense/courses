@@ -1309,6 +1309,26 @@
             margin-top: 25px;
         }
     }
+    &__success {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 0 50px;
+        height: 100%;
+    }
+    &__done {
+        display: block;
+        margin: 0 auto 22px;
+        width: 68px;
+        height: 68px;
+        background-image: url(../img/dist/sprite.svg#icon-done);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    &__success-title {
+        margin: 0;
+    }
 }
 
 .feedback-form {
