@@ -1061,7 +1061,7 @@ svg line {
           align-items: center;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
   .footer__list {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1083,7 +1083,7 @@ svg line {
   margin-left: 53px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__item + .footer__item {
     margin-top: 10px;
     margin-left: 0;
@@ -1098,7 +1098,13 @@ svg line {
 }
 
 .footer__link {
-  font-size: 16px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__link {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 767px) {
