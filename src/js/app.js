@@ -93,12 +93,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
-    // ANIMATIONS
-    AOS.init({
-        duration: 700,
-        once: true,
-    })
-
     // INPUT GROUP
     const allInput = document.querySelectorAll('.input-group__input')
 
@@ -557,4 +551,10 @@ document.addEventListener('DOMContentLoaded', function () {
             },
         });
     }
+
+    // ANIMATIONS
+    AOS.init({
+        duration: 700,
+        once: true,
+    })
 });
