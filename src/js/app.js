@@ -557,4 +557,8 @@ document.addEventListener('DOMContentLoaded', function () {
         duration: 700,
         once: true,
     })
+
+    window.addEventListener('scroll', function(e) {
+        AOS.refreshHard()
+    });
 });

@@ -38,6 +38,7 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        overflow: hidden;
         &--end {
             align-items: flex-end;
         }
