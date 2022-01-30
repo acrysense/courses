@@ -1007,6 +1007,7 @@ svg line {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
 }
 
 .footer__wrapper--end {
